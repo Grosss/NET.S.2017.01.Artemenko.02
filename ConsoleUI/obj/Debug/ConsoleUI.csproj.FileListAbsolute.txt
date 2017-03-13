@@ -1,0 +1,8 @@
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\ConsoleUI\obj\Debug\ConsoleUI.csprojResolveAssemblyReference.cache
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\ConsoleUI\bin\Debug\ConsoleUI.exe
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\ConsoleUI\bin\Debug\ConsoleUI.pdb
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\ConsoleUI\bin\Debug\Sorting.dll
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\ConsoleUI\bin\Debug\Sorting.pdb
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\ConsoleUI\obj\Debug\ConsoleUI.exe
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\ConsoleUI\obj\Debug\ConsoleUI.pdb
