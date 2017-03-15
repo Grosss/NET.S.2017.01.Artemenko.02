@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace Sorting
+namespace Task1
 {
     public static class MergeSort
     {
