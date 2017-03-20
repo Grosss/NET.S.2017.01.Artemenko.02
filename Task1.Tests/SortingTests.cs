@@ -17,11 +17,7 @@ namespace Task1.Tests
             int[] expectedArray = { 4, 2, 13, 34, 18, 65, 83, 7, 52, 39 };            
             Array.Sort(expectedArray);
 
-            MergeSort.Sort(actualArray);
-            for (int i = 0; i < actualArray.Length; i++)
-            {
-                Console.WriteLine(actualArray[i]);
-            }
+            Sorting.MergeSort(actualArray);            
 
             CollectionAssert.AreEqual(expectedArray, actualArray);
         }
@@ -29,13 +25,13 @@ namespace Task1.Tests
         [TestCase(null)]
         public void MergeSort_PassedNullReference_ThrowsArgumentNullException(int[] array)
         {
-            Assert.Throws<ArgumentNullException>(() => MergeSort.Sort(array));
+            Assert.Throws<ArgumentNullException>(() => Sorting.MergeSort(array));
         }
 
         [TestCase(new int[] { })]
         public void MergeSort_PassedEmptyArray_ThrowsArgumentException(int[] array)
         {
-            Assert.Throws<ArgumentException>(() => MergeSort.Sort(array));
+            Assert.Throws<ArgumentException>(() => Sorting.MergeSort(array));
         }
     }
 }
