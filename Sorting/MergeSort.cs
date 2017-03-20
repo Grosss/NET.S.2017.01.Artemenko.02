@@ -19,14 +19,14 @@ namespace Task1
             array = Sort(array);
         }
 
+        #region Private methods
         private static int[] Sort(int[] array)
         {
             if (array.Length == 1)
                 return array;
             return Merge(Sort(array.Take(array.Length / 2).ToArray()), Sort(array.Skip(array.Length / 2).ToArray()));
-        }
+        }        
         
-        #region Private methods
         private static int[] Merge(int[] leftPart, int[] rightPart)
         {
             int leftPartIndex = 0, rightPartIndex = 0;
