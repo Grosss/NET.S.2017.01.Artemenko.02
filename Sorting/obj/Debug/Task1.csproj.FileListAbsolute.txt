@@ -1,0 +1,5 @@
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\Sorting\bin\Debug\Sorting.dll
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\Sorting\bin\Debug\Sorting.pdb
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\Sorting\obj\Debug\Task1.csprojResolveAssemblyReference.cache
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\Sorting\obj\Debug\Sorting.dll
+D:\Projects C#\ForEpam\NET.S.2017.01.Artemenko.02\Sorting\obj\Debug\Sorting.pdb

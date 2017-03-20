@@ -1,16 +1,32 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace Task1
 {
-    public static class MergeSort
+    public static class Sorting
     {
-        public static int[] Sort(int[] array)
+        public static void MergeSort(int[] array)
+        {
+            if (array == null)
+                throw new ArgumentNullException();
+
+            if (array.Length == 0)
+                throw new ArgumentException();
+
+            if (array.Length == 1)
+                return;
+
+            array = Sort(array);
+        }
+
+        private static int[] Sort(int[] array)
         {
             if (array.Length == 1)
                 return array;
             return Merge(Sort(array.Take(array.Length / 2).ToArray()), Sort(array.Skip(array.Length / 2).ToArray()));
         }
-
+        
+        #region Private methods
         private static int[] Merge(int[] leftPart, int[] rightPart)
         {
             int leftPartIndex = 0, rightPartIndex = 0;
@@ -30,5 +46,6 @@ namespace Task1
             }
             return mergedArray;
         }
+        #endregion
     }
 }

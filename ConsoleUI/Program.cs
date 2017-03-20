@@ -15,7 +15,8 @@ namespace ConsoleUI
             foreach (int x in arr)
                 Console.Write(x + " ");
             Console.WriteLine();
-            arr = MergeSort.Sort(arr);
+
+            Sorting.MergeSort(arr);
             Console.WriteLine("After sorting:");
             foreach (int x in arr)
                 Console.Write(x + " ");
