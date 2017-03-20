@@ -14,6 +14,11 @@ namespace Task1
                 throw new ArgumentException();
             
             array = Sort(array);
+            for (int i = 0; i < array.Length; i++)
+            {
+                Console.Write(array[i] + " ");
+            }
+            Console.WriteLine();
         }
 
         #region Private methods
@@ -21,6 +26,7 @@ namespace Task1
         {
             if (array.Length == 1)
                 return array;
+            Console.WriteLine("OLOLO");
             return Merge(Sort(array.Take(array.Length / 2).ToArray()), Sort(array.Skip(array.Length / 2).ToArray()));
         }        
         
@@ -41,6 +47,11 @@ namespace Task1
                 else
                     mergedArray[i] = leftPart[leftPartIndex++];
             }
+            for (int i = 0; i < mergedArray.Length; i++)
+            {
+                Console.Write(mergedArray[i] + " ");
+            }
+            Console.WriteLine();
             return mergedArray;
         }
         #endregion
