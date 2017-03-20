@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Linq;
+using System.Collections.Generic;
 
 namespace Task1
 {
     public static class Sorting
     {
+        #region Public members
         public static void MergeSort(int[] array)
         {
             if (array == null)
@@ -12,21 +14,16 @@ namespace Task1
 
             if (array.Length == 0)
                 throw new ArgumentException();
-            
-            array = Sort(array);
-            for (int i = 0; i < array.Length; i++)
-            {
-                Console.Write(array[i] + " ");
-            }
-            Console.WriteLine();
+
+            Array.Copy(Sort(array), array, array.Length);
         }
+        #endregion
 
         #region Private methods
         private static int[] Sort(int[] array)
         {
             if (array.Length == 1)
                 return array;
-            Console.WriteLine("OLOLO");
             return Merge(Sort(array.Take(array.Length / 2).ToArray()), Sort(array.Skip(array.Length / 2).ToArray()));
         }        
         
@@ -47,11 +44,6 @@ namespace Task1
                 else
                     mergedArray[i] = leftPart[leftPartIndex++];
             }
-            for (int i = 0; i < mergedArray.Length; i++)
-            {
-                Console.Write(mergedArray[i] + " ");
-            }
-            Console.WriteLine();
             return mergedArray;
         }
         #endregion
