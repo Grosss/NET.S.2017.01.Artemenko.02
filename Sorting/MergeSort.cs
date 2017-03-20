@@ -12,10 +12,7 @@ namespace Task1
 
             if (array.Length == 0)
                 throw new ArgumentException();
-
-            if (array.Length == 1)
-                return;
-
+            
             array = Sort(array);
         }
 
